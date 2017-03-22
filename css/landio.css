@@ -6,7 +6,8 @@
     Author:     Taty Grassini @tatygrassini
     Author URI: http://tatygrassini.github.io/
 
------------------------------------------------------------------------------------*/@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700");
+-----------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700");
 @font-face {
 	font-family: 'icomoon';
 	src: url("fonts/icomoon.eot?-fnljg0");
@@ -73,8 +74,10 @@
 .icon-google:before {
 	content: "\e606"
 }
+
 .icon-heart:before {
-	content: "\e607"
+	content: url("../img/Graph-Magnifier-icon-80x80.png")
+/*	content: "\e607"*/
 }
 .icon-linkedin:before {
 	content: "\e608"
@@ -86,13 +89,15 @@
 	background-image: url(../img/favicon/android-chrome-72.png);
 }
 .icon-pen:before {
-	content: "\e60b"
+	content: url("../img/Play-Games-icon-75x75.png")
+/*	content: "\e60b"*/
 }
 .icon-tag:before {
 	content: "\e60c"
 }
 .icon-thunderbolt:before {
-	content: "\e60d"
+	content: url("../img/books-icon-80x80.png")
+/*	content: "\e60d"*/
 }
 .icon-time:before {
 	content: "\e60e"
