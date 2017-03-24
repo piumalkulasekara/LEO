@@ -1,497 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>LEO | Team Pegasus</title>
-    <meta name="description" content="LEO the smart toy for Autism Children " />
-    <meta name="description" content="LEO the smart toy for Autism Children " />
-    <meta name="keywords" content="smart toy, autism, toys, short time memory loss" />
-    <meta name="author" content="Piumal Kulasekara for Team Pegasus" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/touch_icon_leo_57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/touch_icon_leo_60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/touch_icon_leo_72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/touch_icon_leo_76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/touch_icon_leo_114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/touch_icon_leo_120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/touch_icon_leo_144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/touch_icon_leo_152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch_icon_leo_180.png">
-    <link rel="icon" type="image/png" href="img/favicon/leo_32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon/android-chrome-192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="img/favicon/leo_96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="img/favicon/leo_16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <link rel="shortcut icon" href="img/favicon/leo_icon.ico">
-    <meta name="msapplication-TileColor" content="#663fb5">
-    <meta name="msapplication-TileImage" content="img/favicon/mstile-144.png">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#663fb5">
-    <link rel="stylesheet" href="css/landio.css">
-  </head>
-
-  <body>
-  
-<!--    Add FB SDK -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-   
-    <!-- Navigation
-    ================================================== -->
-
-   
-    <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html" target="_self">
-         <img src="img/favicon/android-chrome-72.png" alt="Pegasus Logo"/></a>
-          <span class="sr-only">LEO</span>
-        
-        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
-        &#9776;
-      </a>
-        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
-          <span class="icon-user"></span>
-        </a>
-        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
-          <ul class="nav navbar-nav pull-xs-right">
-            <li class="nav-item nav-item-toggable">
-				<a class="nav-link" href="./index-carousel.html"><small>ORDER</small> <b>Now</b><span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="signUp.html">Sign Up</a>
-            </li>
-            <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="feedbackForm.html" target="new">Feedback</a>
-            </li>
-            <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="aboutus.html" target="_blank">About Us</a>
-            </li>
-            <li class="nav-item nav-item-toggable hidden-md-up">
-              <form class="navbar-form">
-                <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
-              </form>
-            </li>
-            <li class="navbar-divider hidden-sm-down"></li>
-            <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
-              <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="icon-search"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
-                <form class="navbar-form">
-                  <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
-                </form>
-<!--Drop Down Div-->
-              </div>
-            </li>
-            <li class="nav-item dropdown hidden-sm-down textselect-off">
-              <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="img/face1.jpg" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
-                <div class="media">
-                  <div class="media-left">
-                    <img src="img/favicon/leo_icon.ico" height="60" width="60" alt="Avatar" class="img-circle">
-                  </div>
-                  <div class="media-body media-middle">
-                    <h5 class="media-heading">Piumal Kulasekara</h5>
-                    <h6>piumal.kulasekara@gmail.com</h6>
-                  </div>
-                </div>
-                <a href="#" class="dropdown-item text-uppercase">My Account</a>
-                <a href="#" class="dropdown-item text-uppercase">Purchase More</a>
-<!--                <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>-->
-                <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
 <!--
-                <a href="#" class="btn-circle has-gradient pull-xs-right">
+   <?php 
+      include_once("../connection_oasistours/db_connect_en.php");	   
+      ?> 	 
+   -->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>LEO | Team Pegasus</title>
+      <meta name="description" content="LEO the smart toy for Autism Children " />
+      <meta name="description" content="LEO the smart toy for Autism Children " />
+      <meta name="keywords" content="smart toy, autism, toys, short time memory loss" />
+      <meta name="author" content="Piumal Kulasekara for Team Pegasus" />
+      <meta name="Copyright" content="Copyright &copy Team Pegasus" />
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/touch_icon_leo_57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/touch_icon_leo_60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/touch_icon_leo_72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/touch_icon_leo_76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/touch_icon_leo_114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/touch_icon_leo_120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/touch_icon_leo_144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/touch_icon_leo_152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/touch_icon_leo_180.png">
+      <link rel="icon" type="image/png" href="img/favicon/leo_32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="img/favicon/android-chrome-192.png" sizes="192x192">
+      <link rel="icon" type="image/png" href="img/favicon/leo_96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="img/favicon/leo_16.png" sizes="16x16">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <link rel="shortcut icon" href="img/favicon/leo_icon.ico">
+      <meta name="msapplication-TileColor" content="#663fb5">
+      <meta name="msapplication-TileImage" content="img/favicon/mstile-144.png">
+      <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+      <meta name="theme-color" content="#663fb5">
+      <link rel="stylesheet" href="css/landio.css">
+<!--      <link rel="stylesheet" href="css/greensock.css" />-->
+<!--      <link rel="stylesheet" href="css/prettify-greensock.css"s />-->
+   </head>
+   <body>
+      <!--    Add FB SDK -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) return;
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+         fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script> 
+      
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+      <!-- Navigation
+         ================================================== -->
+      <nav class="navbar navbar-dark bg-inverse bg-inverse-custom navbar-fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="index.html" target="_self"> <img src="img/favicon/android-chrome-72.png" alt="Pegasus Logo"/></a> <span class="sr-only">LEO</span> <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar"> &#9776; </a> <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser"> <span class="icon-user"></span> </a>
+            <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+               <ul class="nav navbar-nav pull-xs-right">
+                  <li class="nav-item nav-item-toggable"> <a class="nav-link" href="./index-carousel.html"><small>ORDER</small> <b>Now</b><span class="sr-only">(current)</span></a> </li>
+                  <li class="nav-item nav-item-toggable"> <a class="nav-link" href="signUp.html">Sign Up</a> </li>
+                  <li class="nav-item nav-item-toggable"> <a class="nav-link" href="feedbackForm.html" target="new">Feedback</a> </li>
+                  <li class="nav-item nav-item-toggable"> <a class="nav-link" href="aboutus.html" target="_blank">About Us</a> </li>
+                  <li class="nav-item nav-item-toggable hidden-md-up">
+                     <form class="navbar-form">
+                        <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+                     </form>
+                  </li>
+                  <li class="navbar-divider hidden-sm-down"></li>
+                  <li class="nav-item dropdown nav-dropdown-search hidden-sm-down">
+                     <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="icon-search"></span> </a>
+                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenu1">
+                        <form class="navbar-form">
+                           <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+                        </form>
+                        <!--Drop Down Div--> 
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown hidden-sm-down textselect-off">
+                     <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="img/face1.jpg" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span> </a>
+                     <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
+                        <div class="media">
+                           <div class="media-left"> <img src="img/favicon/leo_icon.ico" height="60" width="60" alt="Avatar" class="img-circle"> </div>
+                           <div class="media-body media-middle">
+                              <h5 class="media-heading">Piumal Kulasekara</h5>
+                              <h6>piumal.kulasekara@gmail.com</h6>
+                           </div>
+                        </div>
+                        <a href="#" class="dropdown-item text-uppercase">My Account</a> <a href="#" class="dropdown-item text-uppercase">Purchase More</a> 
+                        <!--                <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>--> 
+                        <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a> 
+                        <!--
+                           <a href="#" class="btn-circle has-gradient pull-xs-right">
+                             <span class="sr-only">Edit</span>
+                             <span class="icon-edit"></span>
+                           --> 
+                        <!--                </a>--> 
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
+               <div class="media m-t-1">
+                  <div class="media-left"> <img src="img/favicon/leo_icon.ico" height="60" width="60" alt="Avatar" class="img-circle"> </div>
+                  <div class="media-body media-middle">
+                     <h5 class="media-heading">Piumal Kulasekara</h5>
+                     <h6>piumal.kulasekara</h6>
+                  </div>
+               </div>
+               <a href="#" class="dropdown-item text-uppercase">My Account</a> <a href="#" class="dropdown-item text-uppercase">Purchase More</a> 
+               <!--          <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>--> 
+               <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a> 
+               <!--
+                  <a href="#" class="btn-circle has-gradient pull-xs-right m-b-1">
                   <span class="sr-only">Edit</span>
                   <span class="icon-edit"></span>
--->
-<!--                </a>-->
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div id="collapsingMobileUser" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUser">
-          <div class="media m-t-1">
-            <div class="media-left">
-              <img src="img/favicon/leo_icon.ico" height="60" width="60" alt="Avatar" class="img-circle">
+                  --> 
+               <!--          </a>--> 
             </div>
-            <div class="media-body media-middle">
-              <h5 class="media-heading">Piumal Kulasekara</h5>
-              <h6>piumal.kulasekara</h6>
-            </div>
-          </div>
-          <a href="#" class="dropdown-item text-uppercase">My Account</a>
-          <a href="#" class="dropdown-item text-uppercase">Purchase More</a>
-<!--          <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>-->
-          <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-<!--
-          <a href="#" class="btn-circle has-gradient pull-xs-right m-b-1">
-            <span class="sr-only">Edit</span>
-            <span class="icon-edit"></span>
--->
-<!--          </a>-->
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section
-    ================================================== -->
-
-    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
-      <div class="container">
-        <h1 class="display-3">LEO </h1>
-		  <h2 class="m-b-3"><b>L</b>ooking to <b>E</b>liminate A<b>(O)</b>tism <br><em>Smart Brain Stimulation</em></h2>
-        <a class="btn btn-secondary-outline m-b-1" href="stock.html" role="button"><span class="icon-sketch"></span>Order Now</a>
-        <ul class="nav nav-inline social-share">
-			<li class="nav-item"><a class="nav-link" href="https://www.facebook.com/teampegasusiit" target="new" ><span class="icon-facebook" lang="en" data-action="like" data-show-faces="false" data-share="false"></span></a></li>
-         <li class="nav-item"><a class="nav-link" href="mailto:teampegasusiit@gmail.com"><span class="icon-email"></span></a></li>
-          
-<!--    <div class="fb-like" data-href="https://www.facebook.com/teampegasusiit" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>      -->
-          
-        </ul>
-      </div>
-    </header>
-
-    <!-- Intro
-    ================================================== -->
-
-    <section class="section-intro bg-faded text-xs-center">
-      <div class="container">
-        <h3 class="wp wp-1">Let you child learn while he play</h3>
-        <p class="lead wp wp-2"><strong>Short Time Memory Loss</strong> isn't a matter anymore</p>
-        <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3">
-      </div>
-    </section>
-
-    <!-- Features
-    ================================================== -->
-
-    <section class="section-features text-xs-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-block">
-                <span class="icon-pen display-1"></span>
-                <h4 class="card-title">Play</h4>
-                <h6 class="card-subtitle text-muted">Simple RC car</h6>
-                <p class="card-text">All time favourites RC cars on a new ambition. Let you children enjoy their childhood.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-block">
-                <span class="icon-thunderbolt display-1"></span>
-                <h4 class="card-title">Learn</h4>
-                <h6 class="card-subtitle text-muted">Visual + Verbal Brain Stimulation</h6>
-                <p class="card-text">LEO's scientific background is based on a highly effective therapy module which therapists used for many years to stimulate patient’s mind verbally and visually at the same time, to provide the 'fun factors' in their childhood activities, whilst helping the affected children to enhance on their memory.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card m-b-0">
-              <div class="card-block">
-                <span class="icon-heart display-1"></span>
-                <h4 class="card-title">Track</h4>
-                <h6 class="card-subtitle text-muted">Progress Track</h6>
-                <p class="card-text">Parents can track the progress of their children with Super User function.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Video
-    ================================================== -->
-
-    <section class="section-video bg-inverse text-xs-center wp wp-4">
-      <h3 class="sr-only">Video</h3>
-      <video id="demo_video" class="video-js vjs-default-skin vjs-big-play-centered" controls poster="img/video-poster.jpg" data-setup="{}">
-        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-        <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
-
-      </video>
-    </section>
-
-    <!-- Pricing
-    ================================================== -->
-
-    <section class="section-pricing bg-faded text-xs-center">
-      <div class="container">
-        <h3>Manage your subscriptions for pre-orders</h3>
-        <div class="row p-y-3">
-          <div class="col-md-4 p-t-md wp wp-5">
-            <div class="card pricing-box">
-              <div class="card-header text-uppercase">
-                Junior
-              </div>
-              <div class="card-block">
-                <p class="card-title">For beginners with least capability to remember items</p>
-                <h4 class="card-text">
-                  <sup class="pricing-box-currency">$</sup>
-                  <span class="pricing-box-price">15</span>
-                  <small class="text-muted text-uppercase">/month</small>
-                </h4>
-              </div>
-              <ul class="list-group list-group-flush p-x">
-                <li class="list-group-item"><strong>*05</strong> Predefined tags</li>
-                <li class="list-group-item"><strong>*06</strong> months service feedback</li>
-                <li class="list-group-item"><i>* Exclude cloud storage</i></li>
-              </ul>
-				<!--TODO - add link to button-->
-              <a href="#" class="btn btn-primary-outline">Get Started</a>
-            </div>
-          </div>
-          <div class="col-md-4 stacking-top">
-            <div class="card pricing-box pricing-best p-x-0">
-              <div class="card-header text-uppercase">
-                GENIUS
-              </div>
-              <div class="card-block">
-                <p class="card-title">For explorers who wants to discover the World</p>
-                <h4 class="card-text">
-                  <sup class="pricing-box-currency">$</sup>
-                  <span class="pricing-box-price">49</span>
-                  <small class="text-muted text-uppercase">/month</small>
-                </h4>
-              </div>
-              <ul class="list-group list-group-flush p-x">
-                <li class="list-group-item"><strong>*20</strong> Predefined tags</li>
-                <li class="list-group-item"><strong>*12</strong> months service feedback</li>
-                <li class="list-group-item">*Customizable Toy Designs.</li>
-                <li class="list-group-item"><strong>*500MB</strong> free cloud space</li>
-              </ul>
-				<!-- TODO = add link to the button-->
-              <a href="#" class="btn btn-primary">Get Started</a>
-            </div>
-          </div>
-          <div class="col-md-4 p-t-md wp wp-6">
-            <div class="card pricing-box">
-              <div class="card-header text-uppercase">
-                Thinker
-              </div>
-              <div class="card-block">
-                <p class="card-title">For intermediate kids with capability to talk</p>
-                <h4 class="card-text">
-                  <sup class="pricing-box-currency">$</sup>
-                  <span class="pricing-box-price">29</span>
-                  <small class="text-muted text-uppercase">/month</small>
-                </h4>
-              </div>
-              <ul class="list-group list-group-flush p-x">
-                <li class="list-group-item"><strong>*12</strong> Predefined tags.</li>
-                <li class="list-group-item"><strong>*10</strong> months service feedback.</li>
-                <li class="list-group-item">*Customizable Toy Designs</li>
-                <li class="list-group-item"><i>* Exclude cloud storage</i></li>
-              </ul>
-              <a href="#" class="btn btn-primary-outline">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials
-    ================================================== -->
-
-    <section class="section-testimonials text-xs-center bg-inverse">
-      <div class="container">
-        <h3 class="sr-only">Testimonials</h3>
-        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <blockquote class="blockquote">
-                <img src="img/face1.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">Good design at the front-end suggests that everything is in order at the back-end, whether or not that is the case.</p>
-                <footer>Dmitry Fadeyev</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face2.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">It’s not about knowing all the gimmicks and photo tricks. If you haven’t got the eye, no program will give it to you.</p>
-                <footer>David Carson</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face3.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">There’s a point when you’re done simplifying. Otherwise, things get really complicated.</p>
-                <footer>Frank Chimero</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face4.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">Designing for clients that don’t appreciate the value of design is like buying new tires for a rental car.</p>
-                <footer>Joel Fisher</footer>
-              </blockquote>
-            </div>
-            <div class="carousel-item">
-              <blockquote class="blockquote">
-                <img src="img/face5.jpg" height="80" width="80" alt="Avatar" class="img-circle">
-                <p class="h3">Every picture owes more to other pictures painted before than it owes to nature.</p>
-                <footer>E.H. Gombrich</footer>
-              </blockquote>
-            </div>
-          </div>
-          <ol class="carousel-indicators">
-            <li class="active"><img src="img/face1.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="0" class="img-fluid img-circle"></li>
-            <li><img src="img/face2.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="1" class="img-fluid img-circle"></li>
-            <li><img src="img/face3.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="2" class="img-fluid img-circle"></li>
-            <li><img src="img/face4.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="3" class="img-fluid img-circle"></li>
-            <li><img src="img/face5.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="4" class="img-fluid img-circle"></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- Text Content
-    ================================================== -->
-
-    <section class="section-text">
-      <div class="container">
-        <h3 class="text-xs-center">Make your mark on the product industry</h3>
-        <div class="row p-y-3">
-          <div class="col-md-5">
-            <p class="wp wp-7">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
-          </div>
-          <div class="col-md-5 col-md-offset-2 separator-x">
-            <p class="wp wp-8">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- News
-    ================================================== -->
-
-    <section class="section-news">
-      <div class="container">
-        <h3 class="sr-only">News</h3>
-        <div class="bg-inverse">
-          <div class="row">
-            <div class="col-md-6 p-r-0">
-              <figure class="has-light-mask m-b-0 image-effect">
-                <img src="https://images.unsplash.com/photo-1442328166075-47fe7153c128?q=80&fm=jpg&w=1080&fit=max" alt="Article thumbnail" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-md-6 p-l-0">
-              <article class="center-block">
-                <span class="label label-info">Featured article</span>
-                <br>
-                <h5><a href="#">Design studio with product designer Peter Finlan <span class="icon-arrow-right"></span></a></h5>
-                <p class="m-b-0">
-                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span> Design Studio</span></a>
-                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span> 1 Hour Ago</span></a>
-                </p>
-              </article>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-md-push-6 p-l-0">
-              <figure class="has-light-mask m-b-0 image-effect">
-                <img src="https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&fm=jpg&w=1080&fit=max" alt="Article thumbnail" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-md-6 col-md-pull-6 p-r-0">
-              <article class="center-block">
-                <span class="label label-info">Featured article</span>
-                <br>
-                <h5><a href="#">How bold, emotive imagery can connect with your audience <span class="icon-arrow-right"></span></a></h5>
-                <p class="m-b-0">
-                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span> Design Studio</span></a>
-                  <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span> 1 Hour Ago</span></a>
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sign Up
-    ================================================== -->
-
-    <section class="section-signup bg-faded">
-      <div class="container">
-        <h3 class="text-xs-center m-b-3">Sign up to receive free updates as soon as they hit!</h3>
-        <form>
-          <div class="row">
-            <div class="col-md-6 col-xl-3">
-              <div class="form-group has-icon-left form-control-name">
-                <label class="sr-only" for="inputName">Your name</label>
-                <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-              <div class="form-group has-icon-left form-control-email">
-                <label class="sr-only" for="inputEmail">Email address</label>
-                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-              <div class="form-group has-icon-left form-control-password">
-                <label class="sr-only" for="inputPassword">Enter a password</label>
-                <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
-              </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Sign up for free!</button>
-              </div>
-            </div>
-          </div>
-          <label class="c-input c-checkbox">
-            <input type="checkbox" checked>
-            <span class="c-indicator"></span> I agree to Land.io’s <a href="#">terms of service</a>
-          </label>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer
-    ================================================== -->
-
-    <footer class="section-footer bg-inverse" role="contentinfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-5">
-            <div class="media">
-              <div class="media-left">
-                <span class="media-object icon-logo display-1"></span>
-              </div>
-              <small class="media-body media-bottom">
-                &copy; Team Pegasus 2017 <br>
-                Designed & developed by P iumal Kulasekara
-              </small>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-7">
-            <ul class="nav nav-inline">
-              <li class="nav-item">
-                <a class="nav-link" href="./index-carousel.html"><small>NEW</small> Slides<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="ui-elements.html">UI Kit</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://github.com/tatygrassini/landio-html" target="_blank">GitHub</a></li>
-              <li class="nav-item"><a class="nav-link scroll-top" href="#totop">Back to top <span class="icon-caret-up"></span></a></li>
+         </div>
+      </nav>
+      <!-- Hero Section
+         ================================================== -->
+      <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
+         <div class="container">
+            <h1 class="display-3">LEO </h1>
+            <h2 class="m-b-3"><b>L</b>ooking to <b>E</b>liminate A<b>(O)</b>tism <br>
+               <em>Smart Brain Stimulation</em>
+            </h2>
+            <a class="btn btn-secondary-outline m-b-1" href="stock.html" role="button"><span class="icon-sketch"></span>Order Now</a>
+            <ul class="nav nav-inline social-share">
+               <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/teampegasusiit" target="new" ><span class="icon-facebook" lang="en" data-action="like" data-show-faces="false" data-share="false"></span></a></li>
+               <li class="nav-item"><a class="nav-link" href="mailto:teampegasusiit@gmail.com"><span class="icon-email"></span></a></li>
+               <!--    <div class="fb-like" data-href="https://www.facebook.com/teampegasusiit" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>      -->
             </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+         </div>
+      </header>
+      <!-- Intro
+         ================================================== -->
+      <section class="section-intro bg-faded text-xs-center">
+         <div class="container">
+            <h3 class="wp wp-1">Let you child learn while he play</h3>
+            <p class="lead wp wp-2"><strong>Short Time Memory Loss</strong> isn't a matter anymore</p>
+            <img src="img/mock.png" alt="iPad mock" class="img-fluid wp wp-3"> 
+         </div>
+      </section>
+      
+      <!-- Features
+         ================================================== -->
+      <section class="section-features text-xs-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="card">
+                     <div class="card-block">
+                        <span class="icon-pen display-1"></span>
+                        <h4 class="card-title">Play</h4>
+                        <h6 class="card-subtitle text-muted">Simple RC car</h6>
+                        <p class="card-text">All time favourites RC cars on a new ambition. Let you children enjoy their childhood.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card">
+                     <div class="card-block">
+                        <span class="icon-thunderbolt display-1"></span>
+                        <h4 class="card-title">Learn</h4>
+                        <h6 class="card-subtitle text-muted">Visual + Verbal Brain Stimulation</h6>
+                        <p class="card-text">LEO's scientific background is based on a highly effective therapy module which therapists used for many years to stimulate patient’s mind verbally and visually at the same time, to provide the 'fun factors' in their childhood activities, whilst helping the affected children to enhance on their memory.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="card m-b-0">
+                     <div class="card-block">
+                        <span class="icon-heart display-1"></span>
+                        <h4 class="card-title">Track</h4>
+                        <h6 class="card-subtitle text-muted">Progress Track</h6>
+                        <p class="card-text">Parents can track the progress of their children with Super User function.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Video
+         ================================================== -->
+      <section class="section-video bg-inverse text-xs-center wp wp-4">
+         <h3 class="sr-only">Video</h3>
+         <video id="demo_video" class="video-js vjs-default-skin vjs-big-play-centered" controls poster="img/video-poster.jpg" data-setup="{}">
+            <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+            <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+         </video>
+      </section>
+      <!-- Pricing
+         ================================================== -->
+      <section class="section-pricing bg-faded text-xs-center">
+         <div class="container">
+            <h3>Manage your subscriptions for pre-orders</h3>
+            <div class="row p-y-3">
+               <div class="col-md-4 p-t-md wp wp-5">
+                  <div class="card pricing-box">
+                     <div class="card-header text-uppercase"> Junior </div>
+                     <div class="card-block">
+                        <p class="card-title">For beginners with least capability to remember items</p>
+                        <h4 class="card-text"> <sup class="pricing-box-currency">$</sup> <span class="pricing-box-price">15 </span> <small class="text-muted text-uppercase">/month</small> </h4>
+                     </div>
+                     <ul class="list-group list-group-flush p-x">
+                        <li class="list-group-item"><strong>*05</strong> Predefined tags</li>
+                        <li class="list-group-item"><strong>*06</strong> months service feedback</li>
+                        <li class="list-group-item"><i>* Exclude cloud storage</i></li>
+                     </ul>
+                     <!--TODO - add link to button--> 
+                     <a href="#" class="btn btn-primary-outline">Get Started</a> 
+                  </div>
+               </div>
+               <div class="col-md-4 stacking-top">
+                  <div class="card pricing-box pricing-best p-x-0">
+                     <div class="card-header text-uppercase"> GENIUS </div>
+                     <div class="card-block">
+                        <p class="card-title">For explorers who wants to discover the World</p>
+                        <h4 class="card-text"> <sup class="pricing-box-currency">$</sup> <span class="pricing-box-price">49</span> <small class="text-muted text-uppercase">/month</small> </h4>
+                     </div>
+                     <ul class="list-group list-group-flush p-x">
+                        <li class="list-group-item"><strong>*20</strong> Predefined tags</li>
+                        <li class="list-group-item"><strong>*12</strong> months service feedback</li>
+                        <li class="list-group-item">*Customizable Toy Designs.</li>
+                        <li class="list-group-item"><strong>*500MB</strong> free cloud space</li>
+                     </ul>
+                     <!-- TODO = add link to the button--> 
+                     <a href="#" class="btn btn-primary">Get Started</a> 
+                  </div>
+               </div>
+               <div class="col-md-4 p-t-md wp wp-6">
+                  <div class="card pricing-box">
+                     <div class="card-header text-uppercase"> Thinker </div>
+                     <div class="card-block">
+                        <p class="card-title">For intermediate kids with capability to talk</p>
+                        <h4 class="card-text"> <sup class="pricing-box-currency">$</sup> <span class="pricing-box-price">29</span> <small class="text-muted text-uppercase">/month</small> </h4>
+                     </div>
+                     <ul class="list-group list-group-flush p-x">
+                        <li class="list-group-item"><strong>*12</strong> Predefined tags.</li>
+                        <li class="list-group-item"><strong>*10</strong> months service feedback.</li>
+                        <li class="list-group-item">*Customizable Toy Designs</li>
+                        <li class="list-group-item"><i>* Exclude cloud storage</i></li>
+                     </ul>
+                     <a href="#" class="btn btn-primary-outline">Get Started</a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Testimonials
+         ================================================== -->
+      <section class="section-testimonials text-xs-center bg-inverse">
+         <div class="container">
+            <h3 class="sr-only">Testimonials</h3>
+            <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
+               <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                     <blockquote class="blockquote">
+                        <img src="img/face1.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                        <p class="h3">Good design at the front-end suggests that everything is in order at the back-end, whether or not that is the case.</p>
+                        <footer>Dmitry Fadeyev</footer>
+                     </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                     <blockquote class="blockquote">
+                        <img src="img/face2.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                        <p class="h3">It’s not about knowing all the gimmicks and photo tricks. If you haven’t got the eye, no program will give it to you.</p>
+                        <footer>David Carson</footer>
+                     </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                     <blockquote class="blockquote">
+                        <img src="img/face3.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                        <p class="h3">There’s a point when you’re done simplifying. Otherwise, things get really complicated.</p>
+                        <footer>Frank Chimero</footer>
+                     </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                     <blockquote class="blockquote">
+                        <img src="img/face4.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                        <p class="h3">Designing for clients that don’t appreciate the value of design is like buying new tires for a rental car.</p>
+                        <footer>Joel Fisher</footer>
+                     </blockquote>
+                  </div>
+                  <div class="carousel-item">
+                     <blockquote class="blockquote">
+                        <img src="img/face5.jpg" height="80" width="80" alt="Avatar" class="img-circle">
+                        <p class="h3">Every picture owes more to other pictures painted before than it owes to nature.</p>
+                        <footer>E.H. Gombrich</footer>
+                     </blockquote>
+                  </div>
+               </div>
+               <ol class="carousel-indicators">
+                  <li class="active"><img src="img/face1.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="0" class="img-fluid img-circle"></li>
+                  <li><img src="img/face2.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="1" class="img-fluid img-circle"></li>
+                  <li><img src="img/face3.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="2" class="img-fluid img-circle"></li>
+                  <li><img src="img/face4.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="3" class="img-fluid img-circle"></li>
+                  <li><img src="img/face5.jpg" alt="Navigation avatar" data-target="#carousel-testimonials" data-slide-to="4" class="img-fluid img-circle"></li>
+               </ol>
+            </div>
+         </div>
+      </section>
+      <!-- Text Content
+         ================================================== -->
+      <section class="section-text">
+         <div class="container">
+            <h3 class="text-xs-center">Make your mark on the product industry</h3>
+            <div class="row p-y-3">
+               <div class="col-md-5">
+                  <p class="wp wp-7">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
+               </div>
+               <div class="col-md-5 col-md-offset-2 separator-x">
+                  <p class="wp wp-8">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- News
+         ================================================== -->
+      <section class="section-news">
+         <div class="container">
+            <h3 class="sr-only">News</h3>
+            <div class="bg-inverse">
+               <div class="row">
+                  <div class="col-md-6 p-r-0">
+                     <figure class="has-light-mask m-b-0 image-effect"> <img src="https://images.unsplash.com/photo-1442328166075-47fe7153c128?q=80&fm=jpg&w=1080&fit=max" alt="Article thumbnail" class="img-fluid"> </figure>
+                  </div>
+                  <div class="col-md-6 p-l-0">
+                     <article class="center-block">
+                        <span class="label label-info">Featured article</span> <br>
+                        <h5><a href="#">Design studio with product designer Peter Finlan <span class="icon-arrow-right"></span></a></h5>
+                        <p class="m-b-0"> <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span> Design Studio</span></a> <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span> 1 Hour Ago</span></a> </p>
+                     </article>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 col-md-push-6 p-l-0">
+                     <figure class="has-light-mask m-b-0 image-effect"> <img src="https://images.unsplash.com/photo-1434394673726-e8232a5903b4?q=80&fm=jpg&w=1080&fit=max" alt="Article thumbnail" class="img-fluid"> </figure>
+                  </div>
+                  <div class="col-md-6 col-md-pull-6 p-r-0">
+                     <article class="center-block">
+                        <span class="label label-info">Featured article</span> <br>
+                        <h5><a href="#">How bold, emotive imagery can connect with your audience <span class="icon-arrow-right"></span></a></h5>
+                        <p class="m-b-0"> <a href="#"><span class="label label-default text-uppercase"><span class="icon-tag"></span> Design Studio</span></a> <a href="#"><span class="label label-default text-uppercase"><span class="icon-time"></span> 1 Hour Ago</span></a> </p>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <!-- Sign Up
+         ================================================== -->
+      <section class="section-signup bg-faded">
+         <div class="container">
+            <h3 class="text-xs-center m-b-3">Sign up to receive free updates as soon as they hit!</h3>
+            <form>
+               <div class="row">
+                  <div class="col-md-6 col-xl-3">
+                     <div class="form-group has-icon-left form-control-name">
+                        <label class="sr-only" for="inputName">Your name</label>
+                        <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Your name">
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xl-3">
+                     <div class="form-group has-icon-left form-control-email">
+                        <label class="sr-only" for="inputEmail">Email address</label>
+                        <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xl-3">
+                     <div class="form-group has-icon-left form-control-password">
+                        <label class="sr-only" for="inputPassword">Enter a password</label>
+                        <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-xl-3">
+                     <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Sign up for free!</button>
+                     </div>
+                  </div>
+               </div>
+               <label class="c-input c-checkbox">
+               <input type="checkbox" checked>
+               <span class="c-indicator"></span> I agree to Land.io’s <a href="#">terms of service</a> </label>
+            </form>
+         </div>
+      </section>
+      
+      
+      <!-- Footer
+         ================================================== --> 
+      
+<!--
+         <footer class="section-footer bg-inverse" role="contentinfo">
+           <div class="container">
+         	<div class="row">
+         	  <div class="col-md-6 col-lg-5">
+         		<div class="media">
+         		  <div class="media-left">
+         			<span class="media-object icon-logo display-1"></span>
+         		  </div>
+         		  <small class="media-body media-bottom">
+         			&copy; Team Pegasus 2017 <br>
+         			Designed & developed by P iumal Kulasekara
+         		  </small>
+         		</div>
+         	  </div>
+         	  <div class="col-md-6 col-lg-7">
+         		<ul class="nav nav-inline">
+         		  <li class="nav-item">
+         			<a class="nav-link" href="./index-carousel.html"><small>NEW</small> Slides<span class="sr-only">(current)</span></a>
+         		  </li>
+         		  <li class="nav-item"><a class="nav-link" href="ui-elements.html">UI Kit</a></li>
+         		  <li class="nav-item"><a class="nav-link" href="https://github.com/tatygrassini/landio-html" target="_blank">GitHub</a></li>
+         		  <li class="nav-item"><a class="nav-link scroll-top" href="#totop">Back to top <span class="icon-caret-up"></span></a></li>
+         		</ul>
+         	  </div>
+         	</div>
+           </div>
+              </footer>
+-->
+          
+      <!--  Custom Footer-->
+      <footer class="footer-top-containerfooter block-container">
+         <div class="footer-top block">
+            <div class="footer-column first">
+               <h2>LEO</h2>
+               <a href="index.html" target="_self">Home</a> 
+               <a href="stock.php">Order Now</a> 
+               <a href="feedbackForm.php" target="_">Feedback</a>
+               <a href="https://greensock.com/gsap-as" target="_self">GSAP</a>
+               <h2></h2>
+               <a href=""></a> 
+            </div>
+            <div class="footer-column">
+               <h2>Learning</h2>
+               <a href="https://www.autismspeaks.org" target="new">Autism Speak</a><br/>
+               <a href="https://www.autismspeaks.org/site-wide/parents-guide" target="new">Parents' Guide</a><br/>
+               <br/>
+               <h2>Support</h2>
+               <a href="documentation.php" target="_self">Documentation</a><br/>
+               <a href="FAQ.php">FAQs</a><br/>
+            </div>
+            <div class="footer-column">
+               <h2>Our Company</h2>
+               <a href="aboutus.php" target="_self">About</a><br/>
+                     <a href="https://greensock.com/blog/" target="_self">Blog</a><br/> 
+               <a href="https://www.facebook.com/teampegasusiit/events" target="_self">Events</a><br/>
+               <a href="contactUs.php" target="_self">Contact Us</a><br/>
+            </div>
+            <div class="footer-column">
+               <script src="js/footer.js"></script>
+               <a class="social" href="https://www.facebook.com/teampegasusiit" target="_blank">
+                  <img class="idle" height="24" width="24" src="img/social/social-facebook.png"/> <img class="hover" height="24" width="24" src="img/social/social-facebook-hover.png"/>
+                  <p>Facebook</p>
+               </a>
+               <a class="social" href="https://plus.google.com/u/0/+PiumalKulasekaraspk" target="_blank">
+                  <img class="idle" height="24" width="24" src="img/social/social-google.png"/> <img class="hover" height="24" width="24" src="img/social/social-google-hover.png"/>
+                  <p>Google+</p>
+               </a>
+             
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/landio.min.js"></script>
-  </body>
+<!--
+               <a class="social" href="//www.twitter.com/greensock/" target="_blank">
+                  <img class="idle" height="24" width="24" src="https://greensock.com/wp-content/themes/greensock/images/social/social-twitter.png"/> <img class="hover" height="24" width="24" src="https://greensock.com/wp-content/themes/greensock/images/social/social-twitter-hover.png"/>
+                  <p>Twitter</p>
+               </a>
+-->
+
+            </div>
+            <div class="footer-column last">
+               <h2>Looking for Us?</h2>
+               <div class="search expanded" id="foot-sb">
+                  <div class="expander expanded">
+                     <p>We value your feedback deeply and it'll help us in providing a quality service in the future. </p>
+            			<div class="contact-widget"> <i class="fa fa-home"></i>
+              			<p>No-150A/2 Mananduwa Road, Panapitiya, Waskaduwa</p>
+              			<i class="fa fa-globe"></i>
+              			<p><a href="contactUs.php">leosmarttoy.azurewebsites.net</a></p>
+              			<i class="fa fa-envelope"></i>
+              			<p><a href="mailto:teampegasusiit@gmail.com?	Subject=Website%20Inquiry!">info@leosmarttoy.azurewebsites.net</a></p>
+              			<i class="fa fa-mobile"></i>
+              			<p class="phone-number">(+94) 77 150 1156</p>
+            </div>
+                  </div>
+               </div>
+            </div>
+            <div class="clear"></div>
+         
+     
+      <div class="footer-bot-container block-container">
+         <div class="footer-bot block">
+            <div class="footer-left"> &copy; 2017, GreenSock, Inc. <span>|</span> <a href="https://greensock.com/standard-license" target="_self">Terms of Use</a> <span>|</span> <a href="https://greensock.com/privacy/" target="_self">Privacy Policy</a> </div>
+            <div class="footer-right"> <a href="https://greensock.com/credits/" target="_self">Site Credits</a> </div>
+            <div class="clear"></div>
+         </div>
+	   	</div>
+		  </div>
+      </footer>
+      <!--End of the Custom footer       
+     
+      <!--End of the Footer--> 
+      
+	 <!-- All JavaScripts-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+      <script src="js/landio.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+	   <script src="js/footer.js"></script>
+	   
+   </body>
 </html>
